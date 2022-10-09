@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Magica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/b6e0a14f67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpg" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Quienes Somos</a></li>
+                    <li><a href="course.html">Cursos</a></li>
+                    <li><a href="blog.html">Comunidad</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>        
+        </nav>
+        <h1>Nuestros Cursos</h1>
+    </section>
+
+
+    <section class="course">
+        <h1>Cursos que Ofrecemos</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+             <div class="course-col">
+                 <h3>Tortas</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, fuga earum ipsam aliquid harum quis. Doloribus suscipit harum, minima asperiores quibusdam nam quod at illum praesentium labore placeat animi error.</p>
+             </div>
+             <div class="course-col">
+                 <h3>Postres</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, fuga earum ipsam aliquid harum quis. Doloribus suscipit harum, minima asperiores quibusdam nam quod at illum praesentium labore placeat animi error.</p>
+             </div>
+             <div class="course-col">
+                 <h3>Cookies</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, fuga earum ipsam aliquid harum quis. Doloribus suscipit harum, minima asperiores quibusdam nam quod at illum praesentium labore placeat animi error.</p>
+             </div>
+         </div>    
+     </section>
+     
+     <section class="facilities">
+        <h1>Resultados de Graduados</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="pasteleria/SanLorenzo.jpeg">
+                <h3>San Lorenzo</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quisquam architecto, ea non eveniet</p>
+            </div>
+            <div class="facilities-col">
+                <img src="pasteleria/SweetBlueSixteen.jpeg">
+                <h3>Sweet Blue Sixteen</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quisquam architecto, ea non eveniet</p>
+            </div>
+            <div class="facilities-col">
+                <img src="pasteleria/WhatsApp Image 2021-12-20 at 9.27.44 PM (3).jpeg">
+                <h3>La guardia del Leon</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quisquam architecto, ea non eveniet</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="footer">
+        <h4>Quienes Somos</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, perspiciatis? Unde sit optio, <br> debitis exercitationem quibusdam nobis nemo, amet deleniti reiciendis quam et excepturi aspernatur neque dolorum praesentium quod. Quibusdam?</p>
+        <div class="icons">
+            <a href="https://www.instagram.com/echeandia_pasteleria/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Echeandia-Pasteler%C3%ADa-446155685763646/?ref=page_internal" target="_blank"><i class="fab fa-facebook-square" target="_blank"></i></a>
+            <i class="fab fa-facebook-messenger"></i>            
+            <i class="fab fa-twitter"></i>
+            <p>Made with <i class="far fa-heart"></i> by Lopez Martin</p>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script> 
+</body>
+</html>

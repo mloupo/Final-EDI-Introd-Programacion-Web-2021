@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Magica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script src="https://kit.fontawesome.com/b6e0a14f67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpg" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Quienes Somos</a></li>
+                    <li><a href="course.html">Cursos</a></li>
+                    <li><a href="blog.html">Comunidad</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>        
+        </nav>
+        <div class="text-box">
+            <h1>Echeandia Pasteleria</h1>
+            <p>Tortas y pasteleria temática, postres, tartas y muchas delicias mas!</p>
+            <a href="about.html" class="hero-btn">Conoce mas</a>
+        </div>
+    </section>
+
+    <section class="course">
+       <h1>Productos que Elaboramos</h1>
+       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+       <div class="row">
+            <div class="course-col">
+                <h3>Tortas Tematicas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, fuga earum ipsam aliquid harum quis. Doloribus suscipit harum, minima asperiores quibusdam nam quod at illum praesentium labore placeat animi error.</p>
+            </div>
+            <div class="course-col">
+                <h3>Postres y Tortas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, fuga earum ipsam aliquid harum quis. Doloribus suscipit harum, minima asperiores quibusdam nam quod at illum praesentium labore placeat animi error.</p>
+            </div>
+            <div class="course-col">
+                <h3>Cookies y Mucho Mas!!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, fuga earum ipsam aliquid harum quis. Doloribus suscipit harum, minima asperiores quibusdam nam quod at illum praesentium labore placeat animi error.</p>
+            </div>
+        </div>    
+    </section>
+
+    
+
+    <section class="facilities">
+        <h1>Nuestros Productos</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="pasteleria/50 aniversario.jpeg">
+                <h3>50 Aniversario</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quisquam architecto, ea non eveniet</p>
+            </div>
+            <div class="facilities-col">
+                <img src="pasteleria/Minecraft.jpeg">
+                <h3>Infantiles</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quisquam architecto, ea non eveniet</p>
+            </div>
+            <div class="facilities-col">
+                <img src="pasteleria/Comunion Juana.jpeg">
+                <h3>Bautismos-Comuniones</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quisquam architecto, ea non eveniet</p>
+            </div>
+        </div>
+    </section>
+    <section class="campus">
+        <h1>Algunos ejemplos</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempore nesciunt suscipit obcaecati?</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="pasteleria/t_Fortnite1.jpeg">
+                <div class="layer">
+                    <h3>Tortas Tematicas</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="pasteleria/Brutos Rojos1.jpeg">
+                <div class="layer">
+                    <h3>Postres</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="pasteleria/Macarons1.jpeg">
+                <div class="layer">
+                    <h3>Cookies y Mas</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="cta">
+        <h1>Queres trabajar con nosotros?</h1>
+        <a href="contact.html" class="hero-btn">Contactanos</a>
+    </section>
+
+    <section class="footer">
+        <h4>Quienes Somos</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, perspiciatis? Unde sit optio, <br> debitis exercitationem quibusdam nobis nemo, amet deleniti reiciendis quam et excepturi aspernatur neque dolorum praesentium quod. Quibusdam?</p>
+        <div class="icons">
+            <a href="https://www.instagram.com/echeandia_pasteleria/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Echeandia-Pasteler%C3%ADa-446155685763646/?ref=page_internal" target="_blank"><i class="fab fa-facebook-square" target="_blank"></i></a>
+            <i class="fab fa-facebook-messenger"></i>            
+            <i class="fab fa-twitter"></i>
+            <p>Made with <i class="far fa-heart"></i> by Lopez Martin</p>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script> 
+</body>
+</html>

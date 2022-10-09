@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Magica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/b6e0a14f67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpg" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Quienes Somos</a></li>
+                    <li><a href="course.html">Cursos</a></li>
+                    <li><a href="blog.html">Comunidad</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>        
+        </nav>
+        <h1>Nuestros seguidores en Redes</h1>
+    </section>
+    <section class="blog-content">
+        <section class="testimonials">
+            <h1>Lo que opinan Nuestros Clientes</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam!</p>
+            <div class="row">
+                <div class="testimonial-col">
+                <img src="images/user1.jpg">
+                    <div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo praesentium deleniti, atque officia consectetur eum quos rem quia, beatae</p>
+                        <h3>Cristine Lagarde</h3>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>    
+                    </div>
+                </div>
+                <div class="testimonial-col">
+                    <img src="images/user2.jpg">
+                        <div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo praesentium deleniti, atque officia consectetur eum quos rem quia, beatae </p>
+                            <h3>Demian Marley</h3>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>      
+                        </div>
+                    </div>
+            </div>
+    
+        </section>
+        <div class="row">
+            <div class="blog-left">
+                <img src="pasteleria/Red Velvet - Carrot Cake.png" alt="">
+                <h2> #1 Red Velvet</h2>
+                <p>Por lejos la ganadoras de esta semana es <b>"Red Velvet"</b> o <b>"Alfombra Roja"</b>, seguida muy de cerca por <b>"Carrot Cake"</b>.</p>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore non suscipit, culpa dolorem ipsam quae harum temporibus laborum optio magni sed delectus reiciendis quos architecto maiores. Magni corrupti perspiciatis amet.</p>
+                <div class="comment-box">
+                    <h3>Dejanos Tu Comentario</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Nombre">
+                        <input type="email" placeholder="Email">
+                        <textarea rows="5" placeholder="Comentarios.."></textarea>
+                        <button type="submit" class="hero-btn red-btn">ENVIAR</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Ranking de Tortas</h3>
+                <div>
+                    <span>Red Velvet</span>
+                    <span>46</span>
+                 </div>
+                 <div>
+                    <span>Carrot Cake</span>
+                    <span>42</span>
+                 </div>
+                 <div>
+                    <span>Marquise</span>
+                    <span>40</span>
+                 </div>
+                 <div>
+                    <span>Cheese Cake</span>
+                    <span>39</span>
+                    
+                 </div>
+                 <div>
+                    <span>Matilda</span>
+                    <span>21</span>                    
+                 </div>
+                 <div>
+                    <span>Lemon Pie</span>
+                    <span>21</span>
+                 </div>
+                 <div>
+                    <span>Rogel</span>
+                    <span>21</span>
+                 </div>
+                 <div>
+                    <span>Brownie</span>
+                    <span>21</span>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <h4>Quienes Somos</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, perspiciatis? Unde sit optio, <br> debitis exercitationem quibusdam nobis nemo, amet deleniti reiciendis quam et excepturi aspernatur neque dolorum praesentium quod. Quibusdam?</p>
+        <div class="icons">
+            <a href="https://www.instagram.com/echeandia_pasteleria/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Echeandia-Pasteler%C3%ADa-446155685763646/?ref=page_internal" target="_blank"><i class="fab fa-facebook-square" target="_blank"></i></a>
+            <i class="fab fa-facebook-messenger"></i>            
+            <i class="fab fa-twitter"></i>
+            <p>Made with <i class="far fa-heart"></i> by Lopez Martin</p>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script> 
+</body>
+</html>
