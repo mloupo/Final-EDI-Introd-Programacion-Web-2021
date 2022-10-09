@@ -6,7 +6,7 @@ $message = $_POST['message'];
 
 $email_from = 'info@thekaizen.com.ar';
 
-$email_subject = 'New Form Submission'
+$email_subject = 'New Form Submission';
 
 $email_body = "User Name: $name.\n".
                 "User Email: $visitor_email.\n".
@@ -21,6 +21,6 @@ $headers .= "Reply-To: $visitor_email \r\n";
 
 mail($to,$email_subject,$email_body,$headers);
 
-header(location: contact.html);
+header($location: contact.html);
 
 ?>
